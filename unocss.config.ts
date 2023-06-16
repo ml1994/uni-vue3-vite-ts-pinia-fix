@@ -1,6 +1,6 @@
 import type { Preset, Rule } from 'unocss';
 import { defineConfig, presetAttributify, presetUno } from 'unocss';
-
+import presetWeapp from 'unocss-preset-weapp';
 import presetRemToRpx from './preset-rem-to-rpx';
 
 const sizeMapping: Record<string, string> = {
@@ -20,7 +20,9 @@ export default defineConfig({
     presetUno(),
     presetRemToRpx({
       baseFontSize: 4
-    }) as Preset
+    }) as Preset,
+    presetWeapp() as Preset
   ],
-  rules: getSizeRules(sizeMapping)
+  rules: getSizeRules(sizeMapping),
+  theme: { preflightRoot: ['page,::before,::after'] }
 });

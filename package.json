@@ -61,6 +61,7 @@
     "pinia": "2.0.33",
     "pinia-auto-refs": "0.0.5",
     "pinia-plugin-persist-uni": "1.2.0",
+    "unocss-preset-weapp": "^0.52.1",
     "vue": "3.2.47"
   },
   "devDependencies": {
