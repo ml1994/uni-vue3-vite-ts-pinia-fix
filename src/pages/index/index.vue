@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { useTitle } from '@/hooks/useTitle';
-import { forward } from '@/utils/router';
+import { useTitle } from '@/hooks/useTitle'
+import { forward } from '@/utils/router'
 
-const { title, changeTitle } = useTitle();
+const { title, changeTitle } = useTitle()
 function goTest() {
   forward('test', {
     a: 1
-  });
+  })
 }
 </script>
 
